@@ -45,6 +45,12 @@ apis:
   - type: Documentation
     url: https://www.fhb.com/en/privacy
 common:
+- type: DomainSecurity
+  url: security/first-hawaiian-bank-domain-security.yml
+- type: LLMsTxt
+  url: llms/first-hawaiian-bank-llms.txt
+- type: WellKnown
+  url: well-known/first-hawaiian-bank-well-known.yml
 - type: Website
   url: https://www.fhb.com
 - type: Documentation

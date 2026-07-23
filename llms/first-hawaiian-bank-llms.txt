@@ -1,0 +1,22 @@
+# First Hawaiian Bank
+
+> First Hawaiian Bank is Hawaii's oldest and largest financial institution, founded in 1858 and headquartered at First Hawaiian Center in Honolulu. It is a Hawaii state-chartered commercial bank and member FDIC, the principal subsidiary of First Hawaiian, Inc. (NASDAQ: FHB). This file is generated from the API Evangelist provider record; First Hawaiian Bank publishes no public first-party developer platform.
+
+## API posture
+
+First Hawaiian Bank operates no public first-party developer portal and publishes no downloadable OpenAPI/Swagger specifications. Probes of developer.fhb.com, api.fhb.com, and fhb.com/en/developers returned no host or HTTP 404. Consumer-permissioned account and transaction data is reachable only through third-party financial data aggregators (notably Plaid), which handle authentication and connectivity on the consumer's behalf. No documented Financial Data Exchange (FDX) participation or published CFPB Section 1033 data-access posture was found as of this record.
+
+## Banking
+
+- [Online & Mobile Banking](https://www.fhb.com/en/online-mobile-banking): Consumer digital banking product overview.
+- [Contact Us](https://www.fhb.com/en/contact-us): Support and customer service.
+
+## Legal
+
+- [Terms of Use](https://www.fhb.com/en/terms-of-use)
+- [Privacy Policy](https://www.fhb.com/en/privacy)
+
+## Company
+
+- [Website](https://www.fhb.com)
+- [LinkedIn](https://www.linkedin.com/company/first-hawaiian-bank)

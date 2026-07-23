@@ -1,0 +1,20 @@
+generated: '2026-07-23'
+method: probed
+source: live probes of /.well-known/* on First Hawaiian Bank hosts
+note: >-
+  No .well-known endpoints are published. All probes returned HTTP 404. Absence
+  of these records is expected for a regional retail bank that operates no public
+  first-party developer platform. Recorded here as honest probe evidence.
+probes:
+- host: www.fhb.com
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: www.fhb.com
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: www.fhb.com
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
