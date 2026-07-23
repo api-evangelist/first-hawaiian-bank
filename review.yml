@@ -1,0 +1,86 @@
+aid: first-hawaiian-bank
+name: First Hawaiian Bank
+review:
+  question: Does First Hawaiian Bank expose a public first-party developer API, downloadable
+    OpenAPI specs, or a documented FDX / CFPB 1033 data-access interface?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    First Hawaiian Bank publishes no public first-party developer portal and no
+    downloadable API specifications. HTTP probes of the conventional developer
+    and API hosts returned no reachable service: developer.fhb.com,
+    developers.fhb.com, and api.fhb.com resolved to no host (curl exit / status
+    000), and https://fhb.com/en/developers returned HTTP 404. The public
+    marketing site (https://www.fhb.com, HTTP 200) documents consumer and
+    commercial banking products but exposes no "Developers", "API", or
+    "Integrations" surface, and no OpenAPI/Swagger/Postman artifact was found to
+    harvest. The commercial digital product (FHB Commercial Online, formerly
+    OBC) is a traditional web application, not an API. Consumer-permissioned
+    account data is available only through third-party aggregators — Plaid is
+    listed as the connectivity path — meaning access is aggregator-mediated
+    rather than via a direct bank API. No documented Financial Data Exchange
+    (FDX) participation and no published CFPB Section 1033 data-access posture
+    were located as of the review date. No authentication model applies because
+    there is no first-party public API surface; aggregator access is governed by
+    the aggregator's own credential/OAuth flows, not a bank-published contract.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: null
+    downloadableSpecs: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: none-published
+    aggregatorAccess: true
+    aggregators:
+      - Plaid
+    authModel: none-first-party
+  probes:
+    - url: https://developer.fhb.com
+      status: '000'
+      note: No host / not reachable.
+    - url: https://developers.fhb.com
+      status: '000'
+      note: No host / not reachable.
+    - url: https://api.fhb.com
+      status: '000'
+      note: No host / not reachable.
+    - url: https://fhb.com/en/developers
+      status: '404'
+      note: No developers page.
+    - url: https://www.fhb.com
+      status: '200'
+      note: Public marketing site; no developer/API surface.
+    - url: https://www.fhb.com/en/online-mobile-banking
+      status: '200'
+      note: Consumer and commercial digital banking overview; no API links.
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public first-party REST API is documented.
+    - protocol: FDX
+      documented: false
+      note: No documented FDX-conformant data-access API.
+sources:
+  - url: https://www.fhb.com
+    type: Website
+    note: Institution homepage; HTTP 200, no developer/API surface.
+  - url: https://www.fhb.com/en/online-mobile-banking
+    type: Documentation
+    note: Consumer + commercial digital banking overview; FHB Commercial Online is a web app, not an API.
+  - url: https://www.openbankingtracker.com/provider/first-hawaiian-bank
+    type: Reference
+    note: Lists no API products for First Hawaiian Bank; identifies Plaid as the aggregator connectivity path. SWIFT FHBKUS77.
+  - url: https://en.wikipedia.org/wiki/First_Hawaiian_Bank
+    type: Reference
+    note: Identity — founded 1858, HQ Honolulu, subsidiary of First Hawaiian Inc (NASDAQ FHB), ~57 HI + 3 Guam + 1 Saipan branches.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No public first-party API surface exists and no downloadable specification
+    was available to harvest. The record is identity-only with a single honest
+    aggregator-only data-access pointer. This is the correct, non-fabricated
+    result for a regional bank whose open-finance participation runs through
+    aggregators rather than a published developer program.
