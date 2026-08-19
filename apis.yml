@@ -40,7 +40,7 @@ tags:
 - Commercial Banking
 created: '2026-07-23'
 modified: '2026-07-23'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: first-hawaiian-bank:consumer-data-access
   name: First Hawaiian Bank Consumer Data Access (Aggregator-Only)
