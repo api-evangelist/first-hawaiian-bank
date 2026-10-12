@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/first-hawaiian-bank/integrations
+- https://n8n.io/integrations/first-hawaiian-bank/
+- https://composio.dev/toolkits/first-hawaiian-bank
+- https://monid.ai/tools/first-hawaiian-bank
+checked:
+- https://composio.dev/toolkits/first-hawaiian-bank
+- https://monid.ai/tools/first-hawaiian-bank
+- https://n8n.io/integrations/first-hawaiian-bank/
+- https://zapier.com/apps/first-hawaiian-bank/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
