@@ -1,4 +1,4 @@
-# First Hawaiian Bank (first-hawaiian-bank)
+# First Hawaiian Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,53 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-First Hawaiian Bank is Hawaii's oldest and largest financial institution, founded in 1858 and headquartered in Honolulu. It is a Hawaii state-chartered commercial bank and member FDIC, operating as the principal subsidiary of First Hawaiian, Inc. (NASDAQ: FHB). The bank serves consumer and commercial customers across Hawaii, Guam, and Saipan with deposits, lending, wealth management, treasury/cash management, and merchant services.
+First Hawaiian Bank is Hawaii's oldest and largest financial institution, founded in 1858 and headquartered at First Hawaiian Center in Honolulu. It is a Hawaii state-chartered commercial bank and member FDIC, operating as the principal subsidiary of First Hawaiian, Inc. (NASDAQ ticker FHB), a publicly traded bank holding company. The bank serves consumer and commercial customers through roughly 57 branches in Hawaii plus locations in Guam and Saipan, offering deposit accounts, lending, wealth management, treasury/cash management, and merchant services. On the open-finance front, First Hawaiian operates no public first-party developer portal and publishes no downloadable OpenAPI/Swagger specifications; probes of developer.fhb.com, api.fhb.com, and fhb.com/en/developers returned no host or HTTP 404. Consumer-permissioned account data is reachable only through third-party aggregators (notably Plaid), not a direct bank API. No documented Financial Data Exchange (FDX) participation or published CFPB Section 1033 data-access posture was found as of this record. Its commercial online banking product (FHB Commercial Online, formerly OBC) is a traditional web application rather than a developer-facing API surface.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/first-hawaiian-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/first-hawaiian-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Hawaii · Regional Bank · Open Finance · Commercial Banking
 
-## Open-Finance Posture
+## First Hawaiian Bank on APIs.io
 
-First Hawaiian Bank operates **no public first-party developer portal** and publishes **no downloadable OpenAPI/Swagger specifications**. Probes of `developer.fhb.com`, `api.fhb.com`, and `fhb.com/en/developers` returned no host or HTTP 404. Consumer-permissioned account data is reachable only through third-party aggregators (notably **Plaid**), not a direct bank API. No documented **Financial Data Exchange (FDX)** participation or published **CFPB Section 1033** data-access posture was found as of this record. The commercial online banking product (FHB Commercial Online, formerly OBC) is a traditional web application, not a developer-facing API.
+Everything profiled for First Hawaiian Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/first-hawaiian-bank/](https://apis.io/providers/first-hawaiian-bank/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Financial Services
-- Banking
-- United States
-- Hawaii
-- Regional Bank
-- Open Finance
-- Data Aggregation
-- Commercial Banking
+- [First Hawaiian Bank Consumer Data Access (Aggregator-Only)](https://apis.io/apis/first-hawaiian-bank/consumer-data-access/) — First Hawaiian Bank exposes no public first-party API. Consumer-permissioned account and transaction data is available only through third-party financial…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### First Hawaiian Bank Consumer Data Access (Aggregator-Only)
+Authentication, trust centre, and vulnerability disclosure.
 
-First Hawaiian Bank exposes no public first-party API. Consumer-permissioned account and transaction data is available only through third-party financial data aggregators such as Plaid, which handle authentication and connectivity on the consumer's behalf. This is not a first-party bank API.
+- [First Hawaiian Bank Domain Security](https://apis.io/security/first-hawaiian-bank/first-hawaiian-bank-domain-security/)
 
-- **Human URL:** [https://www.fhb.com/en/online-mobile-banking](https://www.fhb.com/en/online-mobile-banking)
+## Where to find this API
 
-#### Properties
-
-- [Documentation](https://www.fhb.com/en/online-mobile-banking)
-- [Privacy / Data Sharing](https://www.fhb.com/en/privacy)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.fhb.com)
 - [Documentation](https://www.fhb.com/en/online-mobile-banking)
-- [LinkedIn](https://www.linkedin.com/company/first-hawaiian-bank)
-- [Terms of Service](https://www.fhb.com/en/terms-of-use)
-- [Privacy Policy](https://www.fhb.com/en/privacy)
 - [Support](https://www.fhb.com/en/contact-us)
+- [Terms of service](https://www.fhb.com/en/terms-of-use)
+- [Privacy policy](https://www.fhb.com/en/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 12.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/first-hawaiian-bank/](https://apis.io/providers/first-hawaiian-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for First Hawaiian Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/first-hawaiian-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
